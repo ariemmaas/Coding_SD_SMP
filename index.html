@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursus Coding untuk SD & SMP - Belajar Programming Sejak Dini</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            text-align: center;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+        }
+
+        main {
+            padding: 3rem 0;
+        }
+
+        .intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 3rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .intro h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .courses-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .course-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .course-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .platform {
+            background: #f0f4ff;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .level {
+            display: inline-block;
+            background: #764ba2;
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .showcase-section {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .showcase-section h2 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 2rem;
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+
+        footer {
+            background: rgba(0,0,0,0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #764ba2;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #667eea;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .courses-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .videos-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>🚀 Kursus Coding untuk Anak</h1>
+                <p class="subtitle">Belajar Programming Sejak Dini - SD & SMP</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="intro">
+                <h2>Mengapa Belajar Coding?</h2>
+                <p>Coding mengajarkan anak-anak untuk berpikir logis, kreatif, dan memecahkan masalah. Dengan pembelajaran yang menyenangkan dan interaktif, anak-anak dapat menciptakan game, animasi, dan aplikasi mereka sendiri!</p>
+                <a href="#courses" class="cta-button">Lihat Program Kami</a>
+            </section>
+
+            <section class="courses-section" id="courses">
+                <h2 class="section-title">📚 Program Pembelajaran Kami</h2>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-icon">🎮</div>
+                        <h3>Scratch Programming</h3>
+                        <div class="platform">Platform: Scratch 3.0</div>
+                        <p>Belajar dasar-dasar programming dengan membuat game dan animasi interaktif menggunakan blok kode visual.</p>
+                        <span class="level">Kelas 3-6 SD</span>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon">🤖</div>
+                        <h3>Robotika & Coding</h3>
+                        <div class="platform">Platform: LEGO Mindstorms / mBlock</div>
+                        <p>Menggabungkan coding dengan robotika untuk membuat robot yang dapat bergerak dan merespon lingkungan.</p>
+                        <span class="level">Kelas 4-6 SD</span>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon">🎨</div>
+                        <h3>Web Development Dasar</h3>
+                        <div class="platform">Platform: HTML, CSS & JavaScript</div>
+                        <p>Membuat website pertama dengan HTML dan CSS, lalu menambahkan interaktivitas dengan JavaScript dasar.</p>
+                        <span class="level">Kelas 7-8 SMP</span>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon">🐍</div>
+                        <h3>Python for Kids</h3>
+                        <div class="platform">Platform: Python + Pygame</div>
+                        <p>Belajar bahasa pemrograman Python yang powerful dengan membuat game sederhana dan program interaktif.</p>
+                        <span class="level">Kelas 7-9 SMP</span>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon">📱</div>
+                        <h3>App Development</h3>
+                        <div class="platform">Platform: MIT App Inventor</div>
+                        <p>Menciptakan aplikasi mobile Android sendiri dengan drag-and-drop interface yang mudah dipahami.</p>
+                        <span class="level">Kelas 8-9 SMP</span>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon">🎯</div>
+                        <h3>Game Development</h3>
+                        <div class="platform">Platform: Unity + C# Basics</div>
+                        <p>Membuat game 2D dan 3D menggunakan Unity game engine dengan pengenalan bahasa C# untuk pemula.</p>
+                        <span class="level">Kelas 8-9 SMP</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="showcase-section">
+                <h2>🎥 Showcase Project Siswa Kami</h2>
+                <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+                    Lihat hasil karya amazing dari siswa-siswa kami!
+                </p>
+                
+                <div class="videos-grid">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/jvppNS0-DzQ" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/aawILCO17EY" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/aR4khF2aQDo" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/IZc1k8LVmU8" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/FZ0unI0s6fE" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kursus Coding Anak. Membangun Masa Depan Digital Indonesia.</p>
+            <p style="margin-top: 1rem;">📧 Email: info@codinganak.com | 📱 WhatsApp: 0812-3456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>
